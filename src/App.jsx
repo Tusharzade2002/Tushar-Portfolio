@@ -19,7 +19,7 @@ const PROFILE = {
   location: 'Butibori, Nagpur, India',
   linkedin: 'https://www.linkedin.com/in/tushar-zade-b491a022b/',
   github: 'https://github.com/Tusharzade2002',
-  resume: '/Tushar-Zade-Resume.pdf',
+  resume: `${import.meta.env.BASE_URL}Tushar-Zade-Resume.pdf`,
 }
 
 const SUMMARY =
