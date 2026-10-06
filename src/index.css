@@ -2,31 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --accent: #38bdf8;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-slate-950 text-slate-100;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  @apply bg-white font-sans text-slate-700 antialiased;
 }
 
-:not(.dark) body {
-  @apply bg-slate-50 text-slate-900;
-}
-
-.section-title {
-  @apply text-3xl md:text-4xl font-bold tracking-tight mb-8 relative inline-block;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 60px;
-  height: 4px;
-  background: var(--accent);
-  border-radius: 2px;
-  transition: width 0.3s ease;
+::selection {
+  @apply bg-blue-500/20;
 }
